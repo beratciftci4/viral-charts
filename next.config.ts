@@ -1,14 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // TypeScript hatalarını görmezden gel (Bu şart)
+  // TypeScript hatalarını görmezden gel (Bu serbest)
   typescript: {
     ignoreBuildErrors: true,
   },
-  // ESLint hatalarını görmezden gel (Next.js 16 için özel ayar)
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // O yasaklı 'eslint' kısmını sildik!
 };
 
 export default nextConfig;
